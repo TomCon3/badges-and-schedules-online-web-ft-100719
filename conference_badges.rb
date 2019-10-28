@@ -21,8 +21,8 @@ end
 
 def printer(attendees)
   badges_and_room_assignments = []
-  badges_and_room_assignments << badges
-  badges_and_room_assignments << room_assignments
+  badges_and_room_assignments << badges.each
+  badges_and_room_assignments << room_assignments.each_with_index
   puts badges_and_room_assignments
 end
   
