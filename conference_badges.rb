@@ -22,7 +22,7 @@ end
 def printer()
   badges_and_room_assignments = []
   badges_and_room_assignments << batch_badge_creator(attendees)
-  badges_and_room_assignments << assign_rooms(attendees)
+  badges_and_room_assignments << room_assignments.each_with_index
   puts badges_and_room_assignments
 end
   
