@@ -19,7 +19,7 @@ def assign_rooms(attendees)
   return room_assignments
 end
 
-def printer()
+def printer(attendees)
   badges_and_room_assignments = []
   badges_and_room_assignments << badges
   badges_and_room_assignments << room_assignments
